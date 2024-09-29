@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Bree Serif', serif;
+        background-color: black;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header::before {
+        background: url('ul.jpg') no-repeat center center/cover;
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        position:fixed;
+    }
+
+    .navigation {
+        display: flex;
+height:50px;
+width:1080px;
+align-items: center;
+        justify-content: left;
+    }
+
+    li {
+        list-style: none;
+        padding: 34px 23px;
+    }
+
+    .section1 {
+        height: 100%;
+        border: 1px solid red;
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+ 
+</style>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">HOME</li>
+                <li class="item">ABOUT</li>
+                <li class="item">SERVICES</li>
+                <li class="item">CONTACT ME</li>
+            </ul>
+        </nav>
+        <section class="section1">
+            <h1>WELCOME TO MY WEBPAGE</h1>
+            <p>My name is Arpan sahu, studying at ITER SOA university, bhubaneshwar</p>
+
+
+
+
+
+        </section>
+    </header>
+</body>
+
+</html>
